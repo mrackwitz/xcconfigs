@@ -1,0 +1,14 @@
+//
+//  Inherit from this config in the test target for your framework.
+//
+//  Copyright (c) 2014-2015 Marius Rackwitz. All rights reserved.
+//
+
+#include "UniversalFramework_Base.xcconfig"
+
+FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]        = $(inherited) '$(SDKROOT)/Developer/Library/Frameworks'
+FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*] = $(inherited) '$(SDKROOT)/Developer/Library/Frameworks'
+FRAMEWORK_SEARCH_PATHS[sdk=macosx*]          = $(inherited) '$(DEVELOPER_FRAMEWORKS_DIR)'
+
+// Yep.
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]         = $(inherited) '@executable_path/../Frameworks' '@loader_path/../Frameworks'
