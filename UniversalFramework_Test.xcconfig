@@ -6,9 +6,11 @@
 
 #include "UniversalFramework_Base.xcconfig"
 
+FRAMEWORK_SEARCH_PATHS[sdk=macosx*]          = $(inherited) '$(DEVELOPER_FRAMEWORKS_DIR)'
 FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]        = $(inherited) '$(SDKROOT)/Developer/Library/Frameworks'
 FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*] = $(inherited) '$(SDKROOT)/Developer/Library/Frameworks'
-FRAMEWORK_SEARCH_PATHS[sdk=macosx*]          = $(inherited) '$(DEVELOPER_FRAMEWORKS_DIR)'
 
 // Yep.
-LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]         = $(inherited) '@executable_path/../Frameworks' '@loader_path/../Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]          = $(inherited) '@executable_path/../Frameworks' '@loader_path/../Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]        = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*] = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
