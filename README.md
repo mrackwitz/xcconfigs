@@ -23,4 +23,4 @@ This project intends to aggregate common or universal Xcode configuration settin
 
 ### Carthage
 
-:warning: Carthage doesn't [support universal frameworks yet](https://github.com/Carthage/Carthage/issues/340).
+Carthage supports universal frameworks on master.
