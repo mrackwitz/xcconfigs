@@ -20,7 +20,3 @@ This project intends to aggregate common or universal Xcode configuration settin
 * Expand `Debug`, `Release` and further configurations, if present
 * Select `UniversalFramework_Framework` for your framework target
 * Select `UniversalFramework_Test` for your test target of your framework target
-
-### Carthage
-
-:warning: Carthage doesn't [support universal frameworks yet](https://github.com/Carthage/Carthage/issues/340).
