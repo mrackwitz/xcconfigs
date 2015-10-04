@@ -1,6 +1,6 @@
 # xcconfigs for Universal Frameworks
 
-> Build iOS, OS X and watchOS frameworks on base of one target.
+> Build iOS, OS X, tvOS and watchOS frameworks on base of one target.
 
 If you maintain a framework on multiple platforms, you usually have to duplicate your framework target. Normally you have to maintain all build settings in two or more places, and then you have to duplicate the target membership lists for all source code files and build phases.
 
