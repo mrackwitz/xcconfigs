@@ -6,12 +6,12 @@
 //
 
 // Make it universal
-SUPPORTED_PLATFORMS                    = macosx iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator
+SUPPORTED_PLATFORMS                    = iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator
 VALID_ARCHS[sdk=macosx*]               = i386 x86_64
 VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
 VALID_ARCHS[sdk=iphonesimulator*]      = arm64 armv7 armv7s
 VALID_ARCHS[sdk=watchos*]              = armv7k
-VALID_ARCHS[sdk=watchsimulator*]       = armv7k
+VALID_ARCHS[sdk=watchsimulator*]       = arm64 armv7
 VALID_ARCHS[sdk=appletv*]              = arm64
 VALID_ARCHS[sdk=appletvsimulator*]     = arm64
 
