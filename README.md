@@ -4,7 +4,7 @@
 
 If you maintain a framework on multiple platforms, you usually have to duplicate your framework target. Normally you have to maintain all build settings in two or more places, and then you have to duplicate the target membership lists for all source code files and build phases.
 
-This project intends to aggregate common or universal Xcode configuration settings, specifically for frameworks. Keeping them in hierarchical Xcode configuration files for easy modification and reuse. All build settings for platform-specific values are scoped by conditional variable assignments. This means you can have one framework target and select at build time, which platform it should be build against and the right default build settings are selected automatically.
+This project intends to aggregate common or universal Xcode configuration settings, specifically for frameworks. Keeping them in hierarchical Xcode configuration files for easy modification and reuse. All build settings for platform-specific values are scoped by conditional variable assignments. This means you can have one framework target and select at build time, which platform it should be built against and the right default build settings are selected automatically.
 
 ## Usage
 
