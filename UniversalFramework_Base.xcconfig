@@ -7,13 +7,13 @@
 
 // Make it universal
 SUPPORTED_PLATFORMS                    = macosx iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator
-VALID_ARCHS[sdk=macosx*]               = i386 x86_64
-VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
-VALID_ARCHS[sdk=iphonesimulator*]      = i386 x86_64
+VALID_ARCHS[sdk=macosx*]               = i386 x86_64 arm64 arm64e
+VALID_ARCHS[sdk=iphoneos*]             = arm64 arm64e armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*]      = i386 x86_64 arm64 arm64e
 VALID_ARCHS[sdk=watchos*]              = armv7k arm64_32
-VALID_ARCHS[sdk=watchsimulator*]       = i386
-VALID_ARCHS[sdk=appletvos*]            = arm64
-VALID_ARCHS[sdk=appletvsimulator*]     = x86_64
+VALID_ARCHS[sdk=watchsimulator*]       = i386 arm64
+VALID_ARCHS[sdk=appletvos*]            = arm64 arm64e
+VALID_ARCHS[sdk=appletvsimulator*]     = x86_64 arm64 arm64e
 
 // Dynamic linking uses different default copy paths
 LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]           = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
